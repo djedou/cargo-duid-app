@@ -1,8 +1,10 @@
 # cargo-duid-app
-duid app is a cargo subcommand  
+**duid-app** is a cargo subcommand  
 
 
-# Working by cloning the repository.  
+# Working by cloning the repository. 
+First, clone this repository  
+
 ## Installation  
 ```  
 cd cargo-duid-app  
