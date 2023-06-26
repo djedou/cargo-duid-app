@@ -46,4 +46,26 @@ pub(crate) fn generate_template(name: &str) {
                 println!("Err: {:#?}", err);
             }
         }
+
+    match Command::new("rustup")
+        .args(["target", "add", "wasm32-unknown-unknown"])
+        .stdout(Stdio::inherit())
+        .status() 
+    {
+        Ok(_) => {},
+        Err(err) => {
+            println!("Err: {:#?}", err);
+        }
+    }
+
+    match Command::new("cargo")
+        .args(["install", "wasm-pack"])
+        .stdout(Stdio::inherit())
+        .status() 
+    {
+        Ok(_) => {},
+        Err(err) => {
+            println!("Err: {:#?}", err);
+        }
+    }        
 }
