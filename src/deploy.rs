@@ -23,7 +23,7 @@ fn get_duid_deploy() -> &'static str {
 // The function is only included in the build when compiling for windows
 #[cfg(target_os = "windows")]
 fn get_duid_deploy() -> &'static str {
-    "./target/release/duid-deploy.exe"
+    "./tools/duid-deploy.exe"
 }
 
 

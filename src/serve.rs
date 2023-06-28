@@ -23,7 +23,7 @@ fn get_duid_serve() -> &'static str {
 // The function is only included in the build when compiling for windows
 #[cfg(target_os = "windows")]
 fn get_duid_serve() -> &'static str {
-    "./target/release/duid-serve.exe"
+    "./tools/duid-serve.exe"
 }
 
 

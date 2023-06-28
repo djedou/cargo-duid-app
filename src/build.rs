@@ -23,7 +23,7 @@ fn get_duid_build() -> &'static str {
 // The function is only included in the build when compiling for windows
 #[cfg(target_os = "windows")]
 fn get_duid_build() -> &'static str {
-    "./target/release/duid-build.exe"
+    "./tools/duid-build.exe"
 }
 
 
