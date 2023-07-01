@@ -25,7 +25,7 @@ pub(crate) fn generate_template(name: &str) {
             }
         }
 
-    match Command::new("cargo")
+    /*match Command::new("cargo")
         .args(["install", "--no-default-features", "cargo-make"]) 
         .stdout(Stdio::inherit())
         .status() 
@@ -34,7 +34,7 @@ pub(crate) fn generate_template(name: &str) {
         Err(watch) => {
             println!("Err: {:#?}", watch);
         }
-    }
+    }*/
 
     match Command::new("cargo")
             .args(["generate", "--git", "https://github.com/djedou/duid_template", "--name", name])

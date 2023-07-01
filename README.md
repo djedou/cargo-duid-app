@@ -1,6 +1,10 @@
 # cargo-duid-app
 **duid-app** is a cargo subcommand  
 
+# There are two ways to install cargo-duid-app  
+Method 1: [From Repository](https://github.com/djedou/cargo-duid-app#working-by-cloning-the-repository)  
+Method 2: [From Crates.io](https://github.com/djedou/cargo-duid-app#working-from-cratesio)  
+
 
 # Working by cloning the repository. 
 First, clone this repository  
